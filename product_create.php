@@ -5,8 +5,13 @@
 	$cat = $_REQUEST["cat"];
 	$date = $_REQUEST["date"];
 	$desc = $_REQUEST["desc"];
-	$id = $_REQUEST["id"];
+	$price = $_REQUEST["price"];
 
-
+	echo $id;
+	echo $name;
+	echo $cat;
+	echo $date;
+	echo $desc;
+	echo $price;
 	?>
 </html>
