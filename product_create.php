@@ -27,7 +27,21 @@
 	$password = "b0f9ad0d6bc76622ca310653f9129f2cab440d8e23e3061ef22d3b1934906c01";
 	$port = "5432";
 
-	$connection = pg_connect("host=".$host."dbname=".$database."user=".$user."password".$password."port".$port);
+	// $host_param_str = "host=".$host;
+	// $dbname_param_str
+	// $user_param_str
+	// $pass_param_str
+	// $sslmode_param_str
+	// $port_param_str
+
+	// $connection_str = $host_param_str + $dbname_param_str + .... 
+
+	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." password".$password." port".$port." ssl= required");
+
+	if ($connection === false)
+		die("ERROR: could not connect to database");
+	else 
+		echo "SUCCESS: Connection to HERUKU postages has been established";
 	?>
 </body>
 </html>
