@@ -36,7 +36,7 @@
 
 	// $connection_str = $host_param_str + $dbname_param_str + .... 
 
-	$connection = pg_connect("host=".$host.", dbname=".$database.", user=".$user.", port".$port.", password".$password.", ssl= required");
+	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." ssl=required");
 
 	if ($connection === false)
 		die("ERROR: could not connect to database");
