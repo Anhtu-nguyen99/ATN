@@ -13,7 +13,7 @@
     </div>
 
     <div data-role="main" class="ui-content">
-        <form action="product_create.php" method="post">
+        <form action="product_create.php" method="GET">
             <label for="productid">Product ID<sup>*</sup></label>
             <input type="text" name="id" id="productid">
             <br>
