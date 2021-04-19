@@ -29,6 +29,8 @@
             <label for="description">Descriptions<sup>*</sup></label>
             <textarea name="desc" id="description" rows="5" cols="30"></textarea> 
             <br>
+            <label for="pice">price</label>
+            <input type="text" name="price" id="price">
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
     </form>
