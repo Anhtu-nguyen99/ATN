@@ -11,7 +11,8 @@ function customer() {
 	input[3].setAttribute("name", "address");
 
 	var textarea = document.getElementsByTagName("textarea");
-	textarea[0].outerHTML = '<input type="text" name="email" id="email">';
+	// textarea[0].outerHTML = '<input type="text" name="email" id="email">';
+	textarea[0].setAttribute("name", "email");
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "customer_create.php");
@@ -27,8 +28,12 @@ function product() {
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "cat");
-	input[3].outerHTML = '<textarea name="desc" id="description" rows="5" cols="30"></textarea>';
-	input[4].setAttribute("name", "price");
+	// input[3].outerHTML = '<textarea name="desc" id="description" rows="5" cols="30"></textarea>';
+	input[3].setAttribute("name", "price");
+
+	var textarea = document.getElementsByTagName("textarea");
+	// textarea[0].outerHTML = '<input type="text" name="email" id="email">';
+	textarea[0].setAttribute("name", "desc");
 	
 
 	var form = document.getElementsByTagName("form");
