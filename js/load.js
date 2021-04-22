@@ -19,5 +19,3 @@ function customer() {
 
 	
 }
-
-alert("anh tu1");

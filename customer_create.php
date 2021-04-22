@@ -26,7 +26,7 @@
 	else 
 		echo "SUCCESS: Connection to HERUKU postages has been established";
 
-	$customer_query = 'INSERT INTO public."Customer"(id,name,phone_number,address,email) VALUES (\''.$id.'\',\''.$name.'\',\''.$phone.'\'.\''.$address.'\','.$email.')';
+	$customer_query = 'INSERT INTO public."Customer"(id,name,phone_number,address,email) VALUES (\''.$id.'\',\''.$name.'\',\''.$phone.'\'.\''.$address.'\',\''.$email.'\')';
 
 	echo '<p>'.$customer_query.'</p>';
 
