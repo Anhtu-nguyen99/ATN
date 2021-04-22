@@ -30,7 +30,7 @@
 
 	echo '<p>'.$customer_query.'</p>';
 
-	if (pg_query($connection,$product_query)) {
+	if (pg_query($connection,$customer_query)) {
 			echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
 		}
 		else {
