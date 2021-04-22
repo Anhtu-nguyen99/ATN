@@ -27,10 +27,9 @@ function product() {
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "cat");
-	input[3].setAttribute("name", "price");
-
-	var textarea = document.getElementsByTagName("textarea");
-	textarea[0].outerHTML = '<textarea name="desc" id="description" rows="5" cols="30"></textarea>';
+	input[3].outerHTML = '<textarea name="desc" id="description" rows="5" cols="30"></textarea>';
+	input[4].setAttribute("name", "price");
+	
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "product_create.php");
