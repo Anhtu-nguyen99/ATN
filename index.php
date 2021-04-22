@@ -9,7 +9,11 @@
     <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-    <button class="btn_page">Customer</button>
+    <ul>
+        <li>Customer</li>
+        <li>Product</li>
+        <li>Bill</li>
+    </ul>
     <div data-role="header">
         
     </div>
