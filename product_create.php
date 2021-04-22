@@ -47,7 +47,6 @@
 
 		$product_query = 'INSERT INTO public."Product"( price, name, id, category, description) VALUES ( '.$price.', \''.$name.'\', \''.$id.'\', \''.$cat.'\', \''.$desc.'\')';
 
-		echo '<p>'.$product_query.'</p>';
 
 		if (pg_query($connection,$product_query)) {
 			echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';

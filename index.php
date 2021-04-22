@@ -5,12 +5,13 @@
     <title>PRODUCT-ATN</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.min.css">
+    <script src="js/load.js"></script>
     <script src="jqueryMobile/jquery-1.11.1.min.js"></script>
     <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
     <ul>
-        <li><a href="#">Customer</a></li>
+        <li><a href="#" onclick=customer()>Customer</a></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">Bill</a></li>
     </ul>
@@ -25,9 +26,6 @@
             <br>
             <label for="productcat">Category</label>
             <input type="text" name="cat" id="productcat"> 
-            <br>
-            <label for="date">Date</label>
-            <input type="date" name="date" id="date"> 
             <br>
             <label for="description">Descriptions<sup>*</sup></label>
             <textarea name="desc" id="description" rows="5" cols="30"></textarea> 
