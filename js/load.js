@@ -1,4 +1,6 @@
 function customer() {
 	var title = document.getElementsByTagName("title");
-	title.setValues("CUSTOMER-ATN")
+	title.setValues("CUSTOMER-ATN");
+
+	alert("anh tu");
 }
