@@ -11,7 +11,7 @@
 </head>
 <body>
     <ul>
-        <li><a onclick=customer()>Customer</a></li>
+        <li><button onclick="customer()">Customer</button></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">Bill</a></li>
     </ul>
