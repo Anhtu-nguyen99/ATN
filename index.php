@@ -13,8 +13,8 @@
 <body>
     <ul>
         <li><a href="#" onclick="customer()">Customer</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Bill</a></li>
+        <li><a href="#" onclick="product()">Product</a></li>
+        <li><a href="#" onclick="bill()">Bill</a></li>
     </ul>
 
     <div data-role="main" class="ui-content">
