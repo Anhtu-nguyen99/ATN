@@ -12,6 +12,7 @@
     <div data-role="header">
         <button class="btn_page">Customer</button>
     </div>
+    <div style="display: none;"></div>
 
     <div data-role="main" class="ui-content">
         <form action="product_create.php" method="GET">
