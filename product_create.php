@@ -49,7 +49,7 @@
 
 		echo '<p>'.$product_query.'</p>';
 
-		if (pg_query($connection, $product_query)) 
+		if (pg_query($connection,$product_query)) 
 			echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
 		else
 			echo '<p> ERROR: Could not Execute query</p>';
