@@ -28,6 +28,8 @@
 
 	$customer_query = 'INSERT INTO public."Customer"(id,name,phone_number,address,email) VALUES (\''.$id.'\',\''.$name.'\',\''.$phone.'\'.\''.$address.'\','.$email.')';
 
+	echo '<p>'.$customer_query.'</p>';
+
 	if (pg_query($connection,$product_query)) {
 			echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
 		}

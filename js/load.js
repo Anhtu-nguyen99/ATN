@@ -20,4 +20,4 @@ function customer() {
 	
 }
 
-alert("anh tu");
+alert("anh tu1");
