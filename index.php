@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PRODUCT-ATN</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.min.css">
     <script src="jqueryMobile/jquery-1.11.1.min.js"></script>
     <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
@@ -33,7 +34,8 @@
             <input type="text" name="price" id="price">
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
-    </form>
+        </form>
+        <button class="btn_page">Customer</button>
     </div>
     
 </body>
