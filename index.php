@@ -10,7 +10,7 @@
 </head>
 <body>
     <div data-role="header">
-        
+        <button class="btn_page">Customer</button>
     </div>
 
     <div data-role="main" class="ui-content">
@@ -35,7 +35,7 @@
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
         </form>
-        <button class="btn_page">Customer</button>
+        
     </div>
     
 </body>
