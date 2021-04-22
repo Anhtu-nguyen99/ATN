@@ -2,5 +2,7 @@ function customer() {
 	var title = document.getElementsByTagName("title");
 	title.setValues("CUSTOMER-ATN");
 
-	alert("anh tu");
+	
 }
+
+alert("anh tu");
