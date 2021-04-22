@@ -13,8 +13,8 @@ function customer() {
 	var textarea = document.getElementsByName("textarea");
 	textarea.outerHTML = '<input type="text" name="email" id="email">';
 
-	var form = document.getElementsByTagName("form");
-	form.setAttribute("action", "customer_create.php");
+	var form = document.getElementsByName("form");
+	form[0].setAttribute("action", "customer_create.php");
 
 
 	
