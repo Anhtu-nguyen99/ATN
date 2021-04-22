@@ -10,10 +10,10 @@ function customer() {
 	input[2].setAttribute("name", "phone_number");
 	input[3].setAttribute("name", "address");
 
-	var textarea = document.getElementsByName("textarea");
+	var textarea = document.getElementsTagName("textarea");
 	textarea.outerHTML = '<input type="text" name="email" id="email">';
 
-	var form = document.getElementsByName("form");
+	var form = document.getElementsTagName("form");
 	form[0].setAttribute("action", "customer_create.php");
 
 
