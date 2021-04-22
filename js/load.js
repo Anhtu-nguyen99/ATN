@@ -14,7 +14,7 @@ function customer() {
 	textarea.outerHTML = '<input type="text" name="email" id="email">';
 
 	var form = document.getElementsByTagName("form");
-	form.setAttribute("action", "customer_create.php")
+	form.setAttribute("action", "customer_create.php");
 
 
 	
