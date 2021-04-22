@@ -35,8 +35,7 @@
             <input type="text" name="price" id="price">
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
-        </form>
-        
+        </form>    
     </div>
     
 </body>
