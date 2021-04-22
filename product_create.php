@@ -45,7 +45,7 @@
 		echo "SUCCESS: Connection to HERUKU postages has been established";
 	
 
-		$product_query = 'INSERT INTO public."Product"(id,name,category,price,description) VALUES (\''.$id.'\',\''.$name.'\',\''.$cat.'\'.\''.$desc.'\','.$price.')';
+		$product_query = 'INSERT INTO public."Product"(id,name,category,price,description) VALUES (\''.$id.'\',\''.$name.'\',\''.$cat.'\'.\''.$price.'\','.$desc.')';
 
 		echo '<p>'.$product_query.'</p>';
 
