@@ -10,13 +10,10 @@
 </head>
 <body>
     <ul>
-        <li>Customer</li>
-        <li>Product</li>
-        <li>Bill</li>
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Bill</a></li>
     </ul>
-    <div data-role="header">
-        
-    </div>
 
     <div data-role="main" class="ui-content">
         <form action="product_create.php" method="GET">
