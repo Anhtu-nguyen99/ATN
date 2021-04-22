@@ -38,12 +38,12 @@
 
 	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
 
-	echo "host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require";
-
 	if ($connection === false)
 		die("ERROR: could not connect to database");
 	else 
 		echo "SUCCESS: Connection to HERUKU postages has been established";
+
+	$product_query = 'INSERT INTO public."Product"(id,name,category,price,description) VALUES (\''.$id.'\',\''.$name.'\',\''.$cat.'\'.\''.$desc.'\','.$price.')';
 	?>
 </body>
 </html>
