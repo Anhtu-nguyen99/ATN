@@ -39,6 +39,16 @@
         <input type="reset" value="Reset">
         </form>    
     </div>
+
+    <dir data-role="footer" data-position="fixed">
+        <h4>Navigation</h4>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#atn_home" data-role="button">Home</a></li>
+                <li><a href="#invoice" data-role="button">Invoice</a></li>
+            </ul>
+        </div>
+    </dir>
     
 </body>
 </html>

@@ -55,3 +55,7 @@ function product() {
 function bill() {
 	alert("not yet");
 }
+
+$(ducument).ready(function() {
+	
+});
