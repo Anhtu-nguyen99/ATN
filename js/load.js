@@ -18,7 +18,6 @@ function customer() {
 	input[3].setAttribute("name", "address");
 
 	var textarea = document.getElementsByTagName("textarea");
-	// textarea[0].outerHTML = '<input type="text" name="email" id="email">';
 	textarea[0].setAttribute("name", "email");
 
 	var form = document.getElementsByTagName("form");
