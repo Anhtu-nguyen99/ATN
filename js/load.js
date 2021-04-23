@@ -1,4 +1,8 @@
 function customer() {
+
+	var title = document.getElementsByTagName("title");
+	title[0].innerHTML = "CUSTOMER-ATN";
+
 	var label = document.getElementsByTagName("label");
 	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
 	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
@@ -19,6 +23,10 @@ function customer() {
 }
 
 function product() {
+
+	var title = document.getElementsByTagName("title");
+	title[0].innerHTML = "PRODUCT-ATN";
+
 	var label = document.getElementsByTagName("label");
 	label[0].outerHTML = '<label for="productid">Product ID<sup>*</sup></label>'; 
 	label[1].outerHTML = '<label for="productname">Product Name<sup>*</sup></label>';
@@ -28,11 +36,9 @@ function product() {
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "cat");
-	// input[3].outerHTML = '<textarea name="desc" id="description" rows="5" cols="30"></textarea>';
 	input[3].setAttribute("name", "price");
 
 	var textarea = document.getElementsByTagName("textarea");
-	// textarea[0].outerHTML = '<input type="text" name="email" id="email">';
 	textarea[0].setAttribute("name", "desc");
 	
 
