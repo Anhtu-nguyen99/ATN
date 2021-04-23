@@ -55,6 +55,6 @@ function bill() {
 	alert("not yet");
 }
 
-$(ducument).ready(function() {
+// $(ducument).ready(function() {
 	
-});
+// });
