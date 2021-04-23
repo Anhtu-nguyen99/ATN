@@ -3,6 +3,9 @@ function customer() {
 	var title = document.getElementsByTagName("title");
 	title[0].innerHTML = "CUSTOMER-ATN";
 
+	var h2 = document.getElementsByTagName("h2");
+	h2[0].innerHTML = "Customer";
+
 	var label = document.getElementsByTagName("label");
 	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
 	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
@@ -26,6 +29,9 @@ function product() {
 
 	var title = document.getElementsByTagName("title");
 	title[0].innerHTML = "PRODUCT-ATN";
+
+	var h2 = document.getElementsByTagName("h2");
+	h2[0].innerHTML = "Product";
 
 	var label = document.getElementsByTagName("label");
 	label[0].outerHTML = '<label for="productid">Product ID<sup>*</sup></label>'; 
