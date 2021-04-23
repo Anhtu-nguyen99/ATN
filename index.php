@@ -17,7 +17,7 @@
         <li><a href="#" onclick="bill()">Bill</a></li>
     </ul>
 
-    <h2>Product</h2>
+    <h2 style="text-align: center;">Product</h2>
 
     <div data-role="main" class="ui-content">
         <form action="product_create.php" method="GET">
