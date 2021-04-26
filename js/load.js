@@ -71,7 +71,7 @@ function bill() {
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "invoiceId");
 	input[3].setAttribute("name", "description");
-	input[3].setAttribute("type", "text");
+	input[3].setAttribute("type", "date");
 
 	var textarea = document.getElementById("description");
 	textarea.setAttribute("name", "desc");
