@@ -21,6 +21,9 @@ function customer() {
 	var textarea = document.getElementsByTagName("textarea");
 	textarea[0].setAttribute("name", "address");
 
+	var add = document.getElementById("add");
+	add.remove();
+
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "customer_create.php");
 }
@@ -48,6 +51,8 @@ function product() {
 	var textarea = document.getElementsByTagName("textarea");
 	textarea[0].setAttribute("name", "desc");
 	
+	var add = document.getElementById("add");
+	add.remove();
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "product_create.php");
