@@ -55,7 +55,7 @@ function product() {
 	add.firstChild.remove();
 
 	var cancle = document.getElementsByClassName("content-list");
-	cancle[0].removeChild("li");
+	cancle[0].childNodes.remove();
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "product_create.php");
