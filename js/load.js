@@ -54,15 +54,15 @@ var i = 0;
 function addProductItem() {
 			alert("run");
             var n = i;
-            var newli = '<li class=\''+ n +'\' >Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text">'+
+            var newli = '<li id=\''+ n +'\' >Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text">'+
             '<a id="cancle'+n+'" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus" href="#">Delete</a></li>';
             $("ul.content-list").append(newli);
             i++;
             function deleteProductItem() {
 				alert("ran");
 				$("#cancle").click(function()){
-				var item = document.getElementsByClassName(n);
-				item[0].remove();
+				var item = document.getElementById(n);
+				item.remove();
 				};
 			};
             $("ul.content-list").listview("refresh");
