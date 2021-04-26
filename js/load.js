@@ -60,10 +60,10 @@ function addProductItem() {
     i++;
     function deleteProductItem() {
 		alert("ran");
-		$("#cancle"+n).click(function()){
+		$("#cancle"+n).click(function(){
 			var item = document.getElementById(n);
 			item.remove();
-		}	
+		});	
 	}
     $("ul.content-list").listview("refresh");
 }
