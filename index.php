@@ -35,7 +35,7 @@
             <br>
             <label for="description">Descriptions<sup>*</sup></label>
             <textarea name="desc" id="description" rows="5" cols="30"></textarea> 
-            <div>
+            <div id="nav">
                 <ul class="content-list" data-role="list-view"></ul>
             </div>
             <label id="add"></label>
