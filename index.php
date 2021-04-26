@@ -36,7 +36,7 @@
             <label for="pice">price</label>
             <input type="text" name="price" id="price">
             <div>
-                <ul class="content-list"></ul>
+                <ul class="content-list" data-role="list-view"></ul>
             </div>
             <a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>
         <input type="submit" value="Submit">
