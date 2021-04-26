@@ -26,7 +26,7 @@
 	else 
 		echo "SUCCESS: Connection to HERUKU postages has been established";
 
-	$invoice_query = 'INSERT INTO public."Invoice"("invoiceId","inoiceDate","desc") VALUES (\''.$id.'\',\''.$name.'\',\''.$invoice_id.'\',\''.$date.'\',\''.$desc.'\')';
+	$invoice_query = 'INSERT INTO public."Invoice"("invoiceId","invoiceDate","desc","customerId","customerName") VALUES (\''.$invoice_id.'\',\''.$date.'\',\''.$desc.'\',\''.$id.'\',\''.$name.'\')';
 
 	echo '<p>'.$invoice_query.'</p>';
 
