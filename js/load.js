@@ -22,7 +22,7 @@ function customer() {
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "customer_create.php");
-}
+};
 
 function product() {
 
@@ -49,14 +49,24 @@ function product() {
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "product_create.php");
-}
-
+};
+var i = 0;
 function addProductItem() {
-            alert("run");
-            var newli = '<li>Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text"> </li>';
+            var n = i;
+            var newli = '<li class="'+ n +'" >Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text"> </li>'+
+            '<a id="cancle" class="'+ n +'" href="#" onclick="deleteProductItem('+ n +')" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Delete </a>';
             $("ul.content-list").append(newli);
+
+            function deleteProductItem(n) {
+				$("a#cancle").click(function()){
+				var item = document.getElementsByClassName(n);
+				item.remove();
+				};
+			};
             $("ul.content-list").listview("refresh");
-        };
+            i++;
+};
+
 
 function bill() {
 	alert("not yet");
