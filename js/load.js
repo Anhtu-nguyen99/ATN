@@ -62,11 +62,11 @@ function bill() {
 	h2[0].innerHTML = "INVOICE";
 
 	var label = document.getElementsByTagName("label");
-	label[0].outerHTML = 'Customer ID<sup>*</sup>'; 
-	label[1].outerHTML = 'Customer Name<sup>*</sup>';
-	label[2].outerHTML = 'Invoice ID<sup>*</sup>';
-	label[3].outerHTML = 'Invoice Day';
-	label[4].outerHTML = 'Description';
+	label[0].innerHTML = 'Customer ID<sup>*</sup>'; 
+	label[1].innerHTML = 'Customer Name<sup>*</sup>';
+	label[2].innerHTML = 'Invoice ID<sup>*</sup>';
+	label[3].innerHTML = 'Invoice Day';
+	label[4].innerHTML = 'Description';
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "invoiceId");
