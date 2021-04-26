@@ -67,9 +67,24 @@ function addProductItem() {
 }
 
 function bill() {
-	alert("not yet");
+	var title = document.getElementsByTagName("title");
+	title[0].innerHTML = "INVOICE-ATN";
+
+	var h2 = document.getElementsByTagName("h2");
+	h2[0].innerHTML = "INVOICE";
+
+	var label = document.getElementsByTagName("label");
+	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
+	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
+	label[2].outerHTML = '<label for="productcat">Invoice ID<sup>*</sup></label>';
+	label[3].outerHTML = '<label for="email">Invoice date</label>';
+	label[4].outerHTML = '';
+
+	var textarea = document.getElementsByTagName("textarea");
+	textarea[0].outerHTML = '<input type="date" name="invoiceDate">';
+
+	var input = document.getElementsByTagName("input");
+	input[2].setAttribute("name", "invoiceId");
+	input[3].outerHTML = "";
 }
 
-// $(ducument).ready(function() {
-	
-// });
