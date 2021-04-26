@@ -16,7 +16,7 @@ function customer() {
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "phone_number");
 	input[3].setAttribute("name", "email");
-	input[3].setAttribute("type", "date");
+	input[3].setAttribute("type", "email");
 
 	var textarea = document.getElementsByTagName("textarea");
 	textarea[0].setAttribute("name", "address");
