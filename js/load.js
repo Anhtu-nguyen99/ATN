@@ -24,6 +24,8 @@ function customer() {
 	var add = document.getElementById("add");
 	add.firstChild.remove();
 
+	$("#nav").children().remove();
+
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "customer_create.php");
 }
@@ -54,8 +56,7 @@ function product() {
 	var add = document.getElementById("add");
 	add.firstChild.remove();
 
-	var nav = document.getElementById("nav");
-	nav.remove();
+	$("#nav").children().remove();
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "product_create.php");
