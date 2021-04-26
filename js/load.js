@@ -50,6 +50,36 @@ function product() {
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "product_create.php");
 }
+
+function bill() {
+
+	var title = document.getElementsByTagName("title");
+	title[0].innerHTML = "INVOICE-ATN";
+
+	var h2 = document.getElementsByTagName("h2");
+	h2[0].innerHTML = "INVOICE";
+
+	var label = document.getElementsByTagName("label");
+	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
+	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
+	label[2].outerHTML = '<label for="productcat">Invoice ID<sup>*</sup></label>';
+	label[3].outerHTML = '<label for="description">Invoice Day</label>';
+	label[4].outerHTML = '<label for="price">Description</label>';
+
+	var textarea = document.getElementById("description");
+	textarea[0].outerHTML = '<input type="date" name="invoiveDate" id="description">;'
+
+	var input = document.getElementsByTagName("input");
+	input[2].setAttribute("name", "invoiceId");
+	input[4].setAttribute("name", "description");
+
+	var add = document.getElementById("add");
+	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>';
+
+	var form = document.getElementsByTagName("form");
+	form[0].setAttribute("action", "invoice_create.php");
+}
+
 var i = 0;
 function addProductItem() {
     var n = i;
@@ -64,33 +94,3 @@ function addProductItem() {
 	});	
     $("ul.content-list").listview("refresh");
 }
-
-function bill() {
-	var title = document.getElementsByTagName("title");
-	title[0].innerHTML = "INVOICE-ATN";
-
-	var h2 = document.getElementsByTagName("h2");
-	h2[0].innerHTML = "INVOICE";
-
-	var label = document.getElementsByTagName("label");
-	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
-	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
-	label[2].outerHTML = '<label for="productcat">Invoice ID<sup>*</sup></label>';
-	label[3].remove();
-	label[4].outerHTML = '<label for="email">Invoice date</label>';
-
-	var textarea = document.getElementsByTagName("textarea");
-	textarea[0].remove();
-
-	var input = document.getElementsByTagName("input");
-	input[2].setAttribute("name", "invoiceId");
-	input[3].setAttribute("name", "invoiceDate");
-	input[3].setAttribute("type", "date");
-
-	var add = document.getElementById("add");
-	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>';
-
-	var form = document.getElementsByTagName("form");
-	form[0].setAttribute("action", "invoice_create.php");
-}
-
