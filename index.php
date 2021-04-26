@@ -35,6 +35,7 @@
             <br>
             <label for="pice">price</label>
             <input type="text" name="price" id="price">
+            <a onclick="addproduct()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
         </form>    
@@ -50,5 +51,12 @@
         </div>
     </div>
     
+    <script>
+        function addProductItem() {
+            var newli = '<li>Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text"> </li>';
+            $("ul.content-list").apptend(newli);
+            $("ul.content-list").listview("refresh");
+        };
+    </script>
 </body>
 </html>
