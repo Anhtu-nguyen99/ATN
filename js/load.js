@@ -76,15 +76,16 @@ function bill() {
 	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
 	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
 	label[2].outerHTML = '<label for="productcat">Invoice ID<sup>*</sup></label>';
-	label[3].outerHTML = '<label for="email">Invoice date</label>';
-	label[4].remove();
+	label[3].remove();
+	label[4].outerHTML = '<label for="email">Invoice date</label>';
 
 	var textarea = document.getElementsByTagName("textarea");
 	textarea[0].remove();
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "invoiceId");
-	input[3].remove();
+	input[3].setAttribute("name", "invoiceDate");
+	input[3].setAttribute("type", "date");
 
 	var add = document.getElementById("add");
 	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>';
