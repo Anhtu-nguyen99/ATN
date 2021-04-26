@@ -61,7 +61,8 @@ function addProductItem() {
             
             $("ul.content-list").listview("refresh");
 };
-function deleteProductItem(n) {
+
+function deleteProductItem($n) {
 	alert("ran");
 	$("#cancle").click(function()){
 	var item = document.getElementsByClassName(n);
