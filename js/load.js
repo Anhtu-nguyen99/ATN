@@ -54,7 +54,7 @@ var i = 0;
 function addProductItem() {
             var n = i;
             var newli = '<li class="'+ n +'" >Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text"> </li>'+
-            '<a id="cancle" class="'+ n +'" href="#" onclick="deleteProductItem('+ n +')" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Delete </a>';
+            '<a id="cancle" class="'+ n +'" href="#" onclick="deleteProductItem('+ n +')">Delete </a>';
             $("ul.content-list").append(newli);
 
             function deleteProductItem(n) {
