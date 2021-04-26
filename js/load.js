@@ -61,13 +61,13 @@ function addProductItem() {
             $("ul.content-list").listview("refresh");
 }
 
-function deleteProductItem($n) {
-	alert("ran");
-	$("#cancle").click(function()){
-	var item = document.getElementsByClassName(n);
-	item[].remove();
-	};
-}
+// function deleteProductItem($n) {
+// 	alert("ran");
+// 	$("#cancle").click(function()){
+// 	var item = document.getElementsByClassName(n);
+// 	item[].remove();
+// 	};
+// }
 
 function bill() {
 	alert("not yet");
