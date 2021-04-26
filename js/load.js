@@ -86,5 +86,8 @@ function bill() {
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "invoiceId");
 	input[3].outerHTML = "";
+
+	var add = document.getElementById("add");
+	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>'
 }
 

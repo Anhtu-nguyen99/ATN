@@ -38,7 +38,7 @@
             <div>
                 <ul class="content-list" data-role="list-view"></ul>
             </div>
-            <a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>
+            <label id="add"></label>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
         </form>    
