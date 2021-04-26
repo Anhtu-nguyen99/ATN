@@ -35,6 +35,7 @@
             <br>
             <label for="pice">price</label>
             <input type="text" name="price" id="price">
+            <ul class="content-list"></ul>
             <a onclick="addproduct()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
