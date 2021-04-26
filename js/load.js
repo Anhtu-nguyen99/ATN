@@ -58,13 +58,11 @@ function addProductItem() {
     '<a id=\"cancle'+n+'\" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus" href="#">Delete</a></li>';
     $("ul.content-list").append(newli);
     i++;
-    function deleteProductItem() {
-		alert("ran");
-		$("#cancle"+n).click(function(){
-			var item = document.getElementById(n);
-			item.remove();
-		});	
-	}
+    
+	$("#cancle"+n).click(function(){
+		var item = document.getElementById(n);
+		item.remove();
+	});	
     $("ul.content-list").listview("refresh");
 }
 
