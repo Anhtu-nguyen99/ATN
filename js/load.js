@@ -52,6 +52,7 @@ function product() {
 };
 var i = 0;
 function addProductItem() {
+			alert("run");
             var n = i;
             var newli = '<li class="'+ n +'" >Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text"> </li>'+
             '<a id="cancle" class="'+ n +'" href="#" onclick="deleteProductItem('+ n +')">Delete </a>';
