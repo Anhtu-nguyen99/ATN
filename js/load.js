@@ -7,18 +7,19 @@ function customer() {
 	h2[0].innerHTML = "Customer";
 
 	var label = document.getElementsByTagName("label");
-	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
-	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
-	label[2].outerHTML = '<label for="productcat">Phone Number<sup>*</sup></label>';
-	label[3].outerHTML = '<label for="email">Email</label>';
-	label[4].outerHTML = '<label for="pice">Address</label>';
+	label[0].innerHTML = 'Customer ID<sup>*</sub>'; 
+	label[1].innerHTML = 'Customer Name<sup>*</sup>';
+	label[2].innerHTML = 'Phone Number<sup>*</sup>';
+	label[3].innerHTML = 'Email';
+	label[4].innerHTML = 'Address';
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "phone_number");
-	input[3].setAttribute("name", "address");
+	input[3].setAttribute("name", "email");
+	input[3].setAttribute("type", "date");
 
 	var textarea = document.getElementsByTagName("textarea");
-	textarea[0].setAttribute("name", "email");
+	textarea[0].setAttribute("name", "address");
 
 	var form = document.getElementsByTagName("form");
 	form[0].setAttribute("action", "customer_create.php");
@@ -33,15 +34,16 @@ function product() {
 	h2[0].innerHTML = "Product";
 
 	var label = document.getElementsByTagName("label");
-	label[0].outerHTML = '<label for="productid">Product ID<sup>*</sup></label>'; 
-	label[1].outerHTML = '<label for="productname">Product Name<sup>*</sup></label>';
-	label[2].outerHTML = '<label for="productcat">Category</label>';
-	label[3].outerHTML = '<label for="description">Description<sup>*</sup></label>';
-	label[4].outerHTML = '<label for="pice">Price</label>';
+	label[0].innerHTML = 'Product ID<sup>*</sup>'; 
+	label[1].innerHTML = 'Product Name<sup>*</sup>';
+	label[2].innerHTML = 'Category';
+	label[3].innerHTML = 'Description<sup>*</sup>';
+	label[4].innerHTML = 'Price';
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "cat");
 	input[3].setAttribute("name", "price");
+	input[3].setAttribute("type", "number");
 
 	var textarea = document.getElementsByTagName("textarea");
 	textarea[0].setAttribute("name", "desc");
@@ -60,18 +62,19 @@ function bill() {
 	h2[0].innerHTML = "INVOICE";
 
 	var label = document.getElementsByTagName("label");
-	label[0].outerHTML = '<label for="productid">Customer ID<sup>*</sup></label>'; 
-	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
-	label[2].outerHTML = '<label for="productcat">Invoice ID<sup>*</sup></label>';
-	label[3].outerHTML = '<label for="description">Invoice Day</label>';
-	label[4].outerHTML = '<label for="price">Description</label>';
-
-	var textarea = document.getElementById("description");
-	textarea[0].outerHTML = '<input type="date" name="invoiveDate" id="description">;'
+	label[0].outerHTML = 'Customer ID<sup>*</sup>'; 
+	label[1].outerHTML = 'Customer Name<sup>*</sup>';
+	label[2].outerHTML = 'Invoice ID<sup>*</sup>';
+	label[3].outerHTML = 'Invoice Day';
+	label[4].outerHTML = 'Description';
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "invoiceId");
-	input[4].setAttribute("name", "description");
+	input[3].setAttribute("name", "description");
+	input[3].setAttribute("type", "text");
+
+	var textarea = document.getElementById("description");
+	textarea.setAttribute("name", "desc");
 
 	var add = document.getElementById("add");
 	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>';

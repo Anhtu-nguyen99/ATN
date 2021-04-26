@@ -30,11 +30,11 @@
             <label for="productcat">Category</label>
             <input type="text" name="cat" id="productcat"> 
             <br>
+            <label for="pice">price</label>
+            <input type="number" name="price" id="price">
+            <br>
             <label for="description">Descriptions<sup>*</sup></label>
             <textarea name="desc" id="description" rows="5" cols="30"></textarea> 
-            <br>
-            <label for="pice">price</label>
-            <input type="text" name="price" id="price">
             <div>
                 <ul class="content-list" data-role="list-view"></ul>
             </div>
