@@ -51,6 +51,13 @@ function product() {
 	form[0].setAttribute("action", "product_create.php");
 }
 
+function addProductItem() {
+            alert("run");
+            var newli = '<li>Product ID: <input name="invoice_productid[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text"> </li>';
+            $("ul.content-list").apptend(newli);
+            $("ul.content-list").listview("refresh");
+        };
+
 function bill() {
 	alert("not yet");
 }
