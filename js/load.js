@@ -78,16 +78,19 @@ function bill() {
 	label[1].outerHTML = '<label for="productname">Customer Name<sup>*</sup></label>';
 	label[2].outerHTML = '<label for="productcat">Invoice ID<sup>*</sup></label>';
 	label[3].outerHTML = '<label for="email">Invoice date</label>';
-	label[4].outerHTML = '';
+	label[4].remove();
 
 	var textarea = document.getElementsByTagName("textarea");
 	textarea[0].outerHTML = '<input type="date" name="invoiceDate">';
 
 	var input = document.getElementsByTagName("input");
 	input[2].setAttribute("name", "invoiceId");
-	input[3].outerHTML = "";
+	input[3].remove();
 
 	var add = document.getElementById("add");
-	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>'
+	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>';
+
+	var form = document.getElementsByTagName("form");
+	form[0].setAttribute("action", "invoice_create.php");
 }
 
