@@ -28,8 +28,6 @@
 
 	$invoice_query = 'INSERT INTO public."Invoice"("invoiceId","invoiceDate","desc","customerId","customerName") VALUES (\''.$invoice_id.'\',\''.$date.'\',\''.$desc.'\',\''.$id.'\',\''.$name.'\')';
 
-	echo '<p>'.$invoice_query.'</p>';
-
 	if (pg_query($connection,$invoice_query)) {
 			echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
 		}

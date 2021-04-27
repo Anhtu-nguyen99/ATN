@@ -14,13 +14,6 @@
 	$desc = $_REQUEST["desc"];
 	$price = $_REQUEST["price"];
 
-	echo $id;
-	echo $name;
-	echo $cat;
-	echo $date;
-	echo $desc;
-	echo $price;
-
 	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
 	$database = "d7rjokn0julj07";
 	$user = "gqkbiudkurbksn";
