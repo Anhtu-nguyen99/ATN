@@ -107,8 +107,9 @@ function addProductItem() {
 	});	
     $("ul.content-list").listview("refresh");
 }
+
 function getName() {
-    $("span").innerHTML = "bye";
+    alert("run");
 }
 
 
