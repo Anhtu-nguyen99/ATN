@@ -18,7 +18,7 @@
 	$productId = "";
 
 	for ($i = 0; $i < count($proId); $i++) {
-		$productId = $proId[$i].",";
+		$productId = "".$proId[$i].",";
 	}
 	echo "<p>".$productId."</p>";
 
@@ -33,8 +33,6 @@
 
 	if ($connection === false)
 		die("ERROR: could not connect to database");
-	else 
-		echo "SUCCESS: Connection to HERUKU postages has been established";
 
 	$invoice_query = 'INSERT INTO public."Invoice"("invoiceId","invoiceDate","desc","customerId","customerName") VALUES (\''.$invoice_id.'\',\''.$date.'\',\''.$desc.'\',\''.$id.'\',\''.$name.'\')';
 
