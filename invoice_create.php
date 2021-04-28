@@ -15,10 +15,10 @@
 	$proId = $_REQUEST["invoice_productId"];
 	$proQty = $_REQUEST["invoice_product_quantity"];
 
-	$productId = [];
+	$productId = "";
 
 	for ($i = 0; $i < count($proId); $i++) {
-		$productId = $proId[$i];
+		$productId = $proId[$i].",";
 	}
 	echo "<p>".$productId."</p>";
 
