@@ -19,8 +19,17 @@
 
 	for ($i = 0; $i < count($proId); $i++) {
 		$productId = "".$proId[$i].",";
+		echo "<p>".$proId[$i]."</p>";
 	}
 	echo "<p>".$productId."</p>";
+
+
+	$product_qty = "";
+	for ($i = 0; $i < count($proQty); $i++) {
+		$product_qty = "".$proQty[$i].",";
+		echo "<p>".$proQty[$i]."</p>";
+	}
+	echo "<p>".$product_qty."</p>";
 
 
 	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
