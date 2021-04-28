@@ -112,6 +112,8 @@ function getName() {
 	alert("run");
 	span = document.getElementsByTagName("span");
 	span[0].innerHTML = "bye";
+	$number = span.length();
+	alert($number);
     // for (var j = 0; j < span.length(); j++) {
     // 	span[i].innerHTML = "bye-bye";
     // }
