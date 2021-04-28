@@ -106,10 +106,10 @@ function addProductItem() {
 		item.remove();
 	});	
     $("ul.content-list").listview("refresh");
-
-    $("input.getName").blur(function(event) {
-    	span = document.getElementsByTagName("span");
-    	span[0].innerHTML = "bye";
-    });
 }
+
+$("input.getName").blur(function(event) {
+    	$("span").innerHTML = "bye";
+    });
+
 
