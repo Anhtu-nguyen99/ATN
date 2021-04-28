@@ -44,7 +44,12 @@
 		else {
 			echo '<p> ERROR: Could not Execute query</p>';
 		}
-
+	$pg = 'SELECT id FROM public."Product"';
+	$result = pg_query($connection,$pg);
+	while (pg_fetch_row($result)) {
+		$a = pg_fetch_row($result);
+		echo "<p>".$result."</p>";
+	}
 	?>
 </body>
 </html>
