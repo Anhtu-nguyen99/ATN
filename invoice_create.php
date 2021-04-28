@@ -43,14 +43,14 @@
 	if ($connection === false)
 		die("ERROR: could not connect to database");
 
-	$invoice_query = 'INSERT INTO public."Invoice"("invoiceId","invoiceDate","desc","customerId","customerName") VALUES (\''.$invoice_id.'\',\''.$date.'\',\''.$desc.'\',\''.$id.'\',\''.$name.'\')';
+	// $invoice_query = 'INSERT INTO public."Invoice"("invoiceId","invoiceDate","desc","customerId","customerName") VALUES (\''.$invoice_id.'\',\''.$date.'\',\''.$desc.'\',\''.$id.'\',\''.$name.'\')';
 
-	if (pg_query($connection,$invoice_query)) {
-			echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
-		}
-		else {
-			echo '<p> ERROR: Could not Execute query</p>';
-		}
+	// if (pg_query($connection,$invoice_query)) {
+	// 		echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
+	// 	}
+	// 	else {
+	// 		echo '<p> ERROR: Could not Execute query</p>';
+	// 	}
 
 	?>
 </body>
