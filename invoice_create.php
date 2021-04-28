@@ -12,6 +12,16 @@
 	$invoice_id = $_REQUEST["invoiceId"];
 	$date = $_REQUEST["invoiceDate"];
 	$desc = $_REQUEST["desc"];
+	$proId = $_REQUEST["invoice_productId"];
+	$proQty = $_REQUEST["invoice_product_quantity"];
+
+	$productId = "";
+
+	for ($i = 0; $i < count($proId);$i++) {
+		$productId = $proId[$i];
+	}
+	echo "<p>".$productId."</p>";
+	
 
 	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
 	$database = "d7rjokn0julj07";
