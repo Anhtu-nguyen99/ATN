@@ -96,7 +96,7 @@ var i = 0;
 function addProductItem() {
     var n = i;
     var newli = '<li id=\"'+ n +
-    '\">Product ID: <input name="invoice_productId[]" type="text" onblur="getName()"> <span style="display:none;">hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
+    '\">Product ID: <input class="getName" name="invoice_productId[]" type="text"> <span style="display:none;">hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
     '<a id=\"cancle'+n+'\" href="#">Delete</a></li>';
     $("ul.content-list").append(newli);
     i++;
@@ -106,11 +106,12 @@ function addProductItem() {
 		item.remove();
 	});	
     $("ul.content-list").listview("refresh");
+
+    $("input.getName").focusout(function(event) {
+    	var name = document.getElementsByTagName("span");
+    	for (var i = 0; i < name.length(); i++) {
+    		name[i].setAttribute("style", "font-size:18px;");
+    	}
+    });
 }
 
-function getName() {
-	var name = document.getElementsByTagName("span");
-	for (var i = 0; i < name.length(); i++) {
-		name[i].setAttribute("style", "font-size:18px;");
-	}
-}
