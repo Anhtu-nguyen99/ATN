@@ -17,14 +17,14 @@
 
 	$productId = array();
 	for ($i = 0; $i < count($proId); $i++) {
-		$productId += $proId[$i].",";
+		$productId .= $proId[$i].",";
 	}
 	echo "<p>".$productId."</p>";
 
 
 	$product_qty = array();
 	for ($i = 0; $i < count($proQty); $i++) {
-		$product_qty += $proQty[$i].",";
+		$product_qty .= $proQty[$i].",";
 	}
 	echo "<p>".$product_qty."</p>";
 
