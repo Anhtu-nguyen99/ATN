@@ -109,11 +109,9 @@ function addProductItem() {
 }
 
 function getName() {
-	alert("ran");
+	alert("run");
 	span = document.getElementsByTagName("span");
-	span[0].innerHTML = "bye";
-	$number = span.length();
-	alert($number);
+	span[i].innerHTML = "bye";
     // for (var j = 0; j < span.length(); j++) {
     // 	span[i].innerHTML = "bye-bye";
     // }
