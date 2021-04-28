@@ -109,10 +109,15 @@ function addProductItem() {
 }
 
 function getName() {
-	$("span").load('invoice_create.php');
-    // for (var j = 0; j < span.length(); j++) {
-    // 	span[i].innerHTML = "bye-bye";
-    // }
+    $.ajax({
+    url: 'invoice_create.php',
+    type: 'GET',
+    data: { id: id, name: name },
+	})
+	.done(function(data) {
+		$("span").html(data);
+		$("span").show();
+	});
 }
 
 
