@@ -19,7 +19,7 @@
 //test
 	// for ($i = 0; $i < count($proId); $i++) {
 	// 	$productId = "".$proId[$i].",";
-		echo "<p>".$proId[0]."</p>";
+		echo "<p>".$proId[1]."</p>";
 	// }
 	// echo "<p>".$productId."</p>";
 
