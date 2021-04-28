@@ -19,7 +19,7 @@
 
 	// for ($i = 0; $i < count($proId); $i++) {
 	// 	$productId = "".$proId[$i].",";
-		echo "<p>".$proId."</p>";
+		echo "<p>".$proId[0]."</p>";
 	// }
 	// echo "<p>".$productId."</p>";
 
@@ -27,7 +27,7 @@
 	// $product_qty = "";
 	// for ($i = 0; $i < count($proQty); $i++) {
 	// 	$product_qty = "".$proQty[$i].",";
-		echo "<p>".$proQty[$i]."</p>";
+		echo "<p>".$proQty[1]."</p>";
 	// }
 	// echo "<p>".$product_qty."</p>";
 
