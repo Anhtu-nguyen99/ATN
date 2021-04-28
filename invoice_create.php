@@ -15,13 +15,13 @@
 	$proId = $_REQUEST["invoice_productId"];
 	$proQty = $_REQUEST["invoice_product_quantity"];
 
-	$productId = "";
+	$productId = [];
 
-	for ($i = 0; $i < count($proId);$i++) {
+	for ($i = 0; $i < count($proId); $i++) {
 		$productId = $proId[$i];
 	}
 	echo "<p>".$productId."</p>";
-	
+
 
 	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
 	$database = "d7rjokn0julj07";
