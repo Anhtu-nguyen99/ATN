@@ -109,7 +109,7 @@ function addProductItem() {
 }
 
 function getName() {
-	alert("run");
+	alert("ran");
 	span = document.getElementsByTagName("span");
 	span[0].innerHTML = "bye";
 	$number = span.length();
