@@ -89,7 +89,7 @@ function bill() {
 	add.innerHTML = '<a onclick="addProductItem()" href="#" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add products</a>';
 
 	var form = document.getElementsByTagName("form");
-	form[0].setAttribute("action", "invoice_create.php");
+	form[0].setAttribute("action", "index.php");
 }
 
 var i = 0;
