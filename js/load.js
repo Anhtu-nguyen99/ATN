@@ -109,11 +109,12 @@ function addProductItem() {
 }
 
 function getName() {
-	alert("ran");
+	alert("run");
 	span = document.getElementsByTagName("span");
-    for (var j = 0; j < span.length(); j++) {
-    	span[i].innerHTML = "bye-bye";
-    }
+	span[0].innerHTML = "bye";
+    // for (var j = 0; j < span.length(); j++) {
+    // 	span[i].innerHTML = "bye-bye";
+    // }
 }
 
 
