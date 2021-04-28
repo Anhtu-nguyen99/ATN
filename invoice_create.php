@@ -48,7 +48,7 @@
 	$result = pg_query($connection,$pg);
 	while (pg_fetch_row($result)) {
 		$a = pg_fetch_row($result);
-		echo "<p>".$result."</p>";
+		echo "<p>".$a."</p>";
 	}
 	?>
 </body>
