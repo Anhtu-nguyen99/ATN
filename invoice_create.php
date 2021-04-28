@@ -16,14 +16,14 @@
 	$proQty = $_REQUEST["invoice_product_quantity"];
 
 	$productId = array();
-	for ($i = 0; $i < count($proId); $i++) {
+	for ($i = 0; $i < count($proId); ++$i) {
 		$productId = $proId[$i].",";
 	}
 	echo "<p>".$productId."</p>";
 
 
 	$product_qty = array();
-	for ($i = 0; $i < count($proQty); $i++) {
+	for ($i = 0; $i < count($proQty); ++$i) {
 		$product_qty = $proQty[$i].",";
 	}
 	echo "<p>".$product_qty."</p>";
