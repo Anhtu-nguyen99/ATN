@@ -16,7 +16,7 @@
 	$proQty = $_REQUEST["invoice_product_quantity"];
 
 	// $productId = "";
-
+//test
 	// for ($i = 0; $i < count($proId); $i++) {
 	// 	$productId = "".$proId[$i].",";
 		echo "<p>".$proId[0]."</p>";
