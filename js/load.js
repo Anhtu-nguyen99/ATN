@@ -96,7 +96,7 @@ var i = 0;
 function addProductItem() {
     var n = i;
     var newli = '<li id=\"'+ n +
-    '\">Product ID: <input name="invoice_productId[]" type="text" onblur="getName()"> <label stype="display:none;">hello</label> Quantity: <input name="invoice_product_quantity[]" type="text">'+
+    '\">Product ID: <input name="invoice_productId[]" type="text" onblur="getName()"> <span style="display:none;">hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
     '<a id=\"cancle'+n+'\" href="#">Delete</a></li>';
     $("ul.content-list").append(newli);
     i++;
