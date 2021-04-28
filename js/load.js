@@ -109,5 +109,8 @@ function addProductItem() {
 }
 
 function getName() {
-
+	var name = document.getElementsByTagName("span");
+	for (var i = 0; i < name.length(); i++) {
+		name[i].setAttribute("style", "font-size:18px;");
+	}
 }
