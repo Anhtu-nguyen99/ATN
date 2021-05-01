@@ -109,12 +109,15 @@ function addProductItem() {
 }
 
 function getName() {
+	var proId = $(".getName").val();
+
     $.ajax({
-    url: 'invoice_create.php',
+    url: 'index.php?id=&name=',
     type: 'GET',
-    data: { id: id, name: name },
+    data: { id: proId, name: name },
 	})
 	.done(function(data) {
+		if (proId )
 		$("span").html(data);
 		$("span").show();
 	});
