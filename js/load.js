@@ -109,6 +109,7 @@ function addProductItem() {
 }
 
 function getName() {
+	alert("run");
 	document.getElementsByTagName("span").innerHTML = "bye";
 	// var xhttp = new XMLHttpRequest();
 	// xhttp.ondreadystatechange = function() {
