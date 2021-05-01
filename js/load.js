@@ -94,6 +94,7 @@ function bill() {
 
 var i = 0;
 function addProductItem() {
+	alert("js run");
     var n = i;
     var newli = '<li id=\"' + n +
     '\">Product ID: <input class="proId" name="invoice_productId[]" type="text" onblur="getName()"> <span>hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">' +
@@ -107,11 +108,11 @@ function addProductItem() {
 	});	
     $("ul.content-list").listview("refresh");
 }
-alert("js run");
+
 
 function getName() {
 	alert("run js");
-	document.getElementsByTagName("span").innerHTML = "bye";
+
 	// var xhttp = new XMLHttpRequest();
 	// xhttp.ondreadystatechange = function() {
 	// 	if (xhttp.readyState == 4 && xhttp.status == 200) {
