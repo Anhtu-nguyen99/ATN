@@ -109,15 +109,15 @@ function addProductItem() {
 }
 
 function getName() {
-	var proId = $(".getName").val();
-	var xhttp = new XMLHttpRequest();
-	xhttp.ondreadystatechange = function() {
-		if (xhttp.readyState == 4 && xhttp.status == 200) {
-			document.getElementsByTagName("span").innerHTML = xhttp.responseText;
-		}
-	};
-	xhttp.open("GET", "invoice_create.php?id=", true);
-	xhttp.send();
+	document.getElementsByTagName("span").innerHTML = "bye";
+	// var xhttp = new XMLHttpRequest();
+	// xhttp.ondreadystatechange = function() {
+	// 	if (xhttp.readyState == 4 && xhttp.status == 200) {
+	// 		document.getElementsByTagName("span").innerHTML = xhttp.responseText;
+	// 	}
+	// };
+	// xhttp.open("GET", "invoice_create.php?id=", true);
+	// xhttp.send();
 
  //    $.ajax({
  //    url: 'index.php?id=&name=',
