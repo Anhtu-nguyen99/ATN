@@ -48,10 +48,10 @@
 	$result = pg_query($connection,$pg);
 	while (pg_fetch_row($result)) {
 		$a = pg_fetch_row($result);
-		echo "<p>".$a."</p>";
-		// for ($b = 0; $b < count($a); $b++) {
-		// 	echo "<p>".$a[$b]."</p>";
-		// }
+		// echo "<p>".$a."</p>";
+		for ($b = 0; $b < count($a); $b++) {
+			echo "<p>".$a[$b]."</p>";
+		}
 	}
 	?>
 </body>
