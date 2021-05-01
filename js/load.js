@@ -107,7 +107,7 @@ function addProductItem() {
 	});	
     $("ul.content-list").listview("refresh");
 }
-alert("js run")
+alert("js run");
 
 function getName() {
 	alert("run js");
