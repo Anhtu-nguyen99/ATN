@@ -117,9 +117,9 @@ function getName() {
 		}
 	};
 	var getId = document.getElementById("proId").value;
-	xhttp.open("GET", "invoice_create.php?id=" + getId, true);
+	xhttp.open("GET", "product_create.php?id=" + getId, true);
 	xhttp.send();
-	alert("no");
+	alert("yes");
 
  //    $.ajax({
  //    url: 'index.php?id=&name=',

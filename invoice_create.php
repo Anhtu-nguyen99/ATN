@@ -44,14 +44,7 @@
 	else {
 		echo '<p> ERROR: Could not Execute query</p>';
 	}
-
-	$ajaxId = $_GET["id"];
-
-    $pg = 'SELECT name FROM public."Product" WHERE id = \''.$ajaxId.'\'';
-    $result = pg_query($connection,$pg);
-    if (pg_fetch_row($result)) {
-        echo "<p>".$result."</p>";
-    }
+	
 	?>
 </body>
 </html>

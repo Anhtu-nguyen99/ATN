@@ -36,18 +36,25 @@
 	}
 	else {
 		echo "SUCCESS: Connection to HERUKU postages has been established";
-	
-
-		$product_query = 'INSERT INTO public."Product"( price, name, id, category, description) VALUES ( '.$price.', \''.$name.'\', \''.$id.'\', \''.$cat.'\', \''.$desc.'\')';
-
-
-		if (pg_query($connection,$product_query)) {
-			echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
-		}
-		else {
-			echo '<p> ERROR: Could not Execute query</p>';
-		}
 	}
+
+	$product_query = 'INSERT INTO public."Product"( price, name, id, category, description) VALUES ( '.$price.', \''.$name.'\', \''.$id.'\', \''.$cat.'\', \''.$desc.'\')';
+
+
+	if (pg_query($connection,$product_query)) {
+		echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
+	}
+	else {
+		echo '<p> ERROR: Could not Execute query</p>';
+	}
+
+	$ajaxId = $_GET["id"];
+
+    $pg = 'SELECT name FROM public."Product" WHERE id = \''.$ajaxId.'\'';
+    $result = pg_query($connection,$pg);
+    if (pg_fetch_row($result)) {
+        echo "<p>".$result."</p>";
+    }
 	?>
 </body>
 </html>
