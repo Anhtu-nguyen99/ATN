@@ -114,12 +114,13 @@ function getName() {
 	xhttp.ondreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
 			document.getElementById("ajaxSpan").innerHTML = xhttp.responseText;
+		} else {
+			alert("yes");
 		}
 	};
-	var getId = document.getElementById("proId").value;
-	xhttp.open("GET", "product_create.php?id=" + getId, true);
+
+	xhttp.open("GET", "product_create.php?id=", true);
 	xhttp.send();
-	alert("yes");
 
  //    $.ajax({
  //    url: 'index.php?id=&name=',
