@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATN Company</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="public/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="jqueryMobile/jquery-1.11.1.min.js"></script>
+    <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
 	<header>
@@ -13,7 +18,13 @@
 		</div>
 	</header>
 	<main>
-		
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="col-xs-6 col-sm-3">
+					<img class="image" src="img/530.jpg" alt="530 m sport">
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div data-role="footer" data-position="fixed">
