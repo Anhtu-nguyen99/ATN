@@ -94,7 +94,6 @@ function bill() {
 
 var i = 0;
 function addProductItem() {
-	alert("js run");
     var n = i;
     var newli = '<li id=\"' + n +
     '\">Product ID: <input class="proId" name="invoice_productId[]" type="text" onblur="getName()"> <span id="ajaxSpan">hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
@@ -114,7 +113,7 @@ function getName() {
 	var xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
-			document.getElementById("ajaxspan").innerHTML = xhttp.responseText;
+			document.getElementById("ajaxSpan").innerHTML = xhttp.responseText;
 		}
 	};
 	xhttp.open("GET", "invoice_create.php?id=", true);
