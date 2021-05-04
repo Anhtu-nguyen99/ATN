@@ -27,11 +27,11 @@
 		<h3>ALL Car</h3>
 		<div class="row">
 			<div class="col-xs-12">
-				<?php foreach ($products as $product) {?>
+				<?php foreach ($products as $product) { ?>
 				<div class="col-xs-6 col-sm-3">
 					<img class="image" src="img/530.jpg" alt="530 m sport">
-					<h5>BMW 530i M Sport</h5>
-					<p><?$product->getPrice()?></p>
+					<h5><?=$product->getName();?></h5>
+					<p><?=$product->getPrice();?></p>
 				</div>
 				<?php } ?>
 			</div>
