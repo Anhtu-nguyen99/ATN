@@ -13,10 +13,10 @@
 </head>
 <body>
 	<header>
-		<div data-position="fixed">
+		<div>
 			<ul>
-				<li><a href="index.php">Admin page</a></li>
-				<li><a href="home_page.php">Home page</a></li>
+				<li><a href="index.php" data-role="button">Admin page</a></li>
+				<li><a href="home_page.php" data-role="button">Home page</a></li>
 			</ul>
 		</div>
 		<div>
