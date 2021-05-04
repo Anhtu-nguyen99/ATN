@@ -119,19 +119,8 @@ function getName() {
 			alert("yes");
 		}
 	};
-	xhttp.open("GET", "product_create.php", true);
+	xhttp.open("GET", "product_create.php?name=", true);
 	xhttp.send();
-
- //    $.ajax({
- //    url: 'index.php?id=&name=',
- //    type: 'GET',
- //    data: { id: proId, name: name },
-	// })
-	// .done(function(data) {
-	// 	if (proId )
-	// 	$("span").html(data);
-	// 	$("span").show();
-	// });
 }
 
 
