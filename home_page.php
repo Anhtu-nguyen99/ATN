@@ -13,6 +13,12 @@
 </head>
 <body>
 	<header>
+		<div data-position="fixed">
+			<ul>
+				<li><a href="index.php">Admin page</a></li>
+				<li><a href="home_page.php">Home page</a></li>
+			</ul>
+		</div>
 		<div>
 			<img src="img/head.jpg" alt="head car">
 		</div>
