@@ -27,10 +27,13 @@
 		<h3>ALL Car</h3>
 		<div class="row">
 			<div class="col-xs-12">
+				<?php foreach ($products as $product) {?>
 				<div class="col-xs-6 col-sm-3">
 					<img class="image" src="img/530.jpg" alt="530 m sport">
 					<h5>BMW 530i M Sport</h5>
+					<p><?$product->getPrice()?></p>
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</main>
@@ -45,5 +48,65 @@
         </div>
     </div>
 	</footer>
+	<?php
+	$id = $_REQUEST["id"];
+	$name = $_REQUEST["name"];
+	$cat = $_REQUEST["cat"];
+	$date = $_REQUEST["date"];
+	$desc = $_REQUEST["desc"];
+	$price = $_REQUEST["price"];
+
+	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
+	$database = "d7rjokn0julj07";
+	$user = "gqkbiudkurbksn";
+	$password = "b0f9ad0d6bc76622ca310653f9129f2cab440d8e23e3061ef22d3b1934906c01";
+	$port = "5432";
+	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
+	$products = [];
+	$pg = 'SELECT * FROM public."Product"';
+	$result = pg_query($connection,$pg);
+	if ($result->num_rows > 0) 
+		{
+			while ($row = pg_fetch_assoc($result))
+			{
+				$product = new Product(
+					$row["id"], $row["name"], $row["price"], $row["image"], $row["category"], $row["description"]);
+				$products[] = $product;
+			}
+		}
+
+	class Product {
+	protected $id;
+	protected $name;
+	protected $price;
+	protected $image;
+	protected $category;
+	protected $description;	
+	function __construct($id, $name, $price, $image, $category, $description){
+		$this->productId = $id;
+		$this->productName = $name;
+		$this->productPrice = $price;
+		$this->image = $image;
+		$this->category = $category;
+		$this->description = $description;
+	}
+
+	function getId() {
+		return $this->productId;
+	}
+
+	function getName() {
+		return $this->productName;
+	}
+
+	function getPrice() {
+		return $this->productPrice;
+	}
+
+	function getImage() {
+		return $this->image;
+	}
+}
+	?>
 </body>
 </html>
