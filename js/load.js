@@ -110,14 +110,14 @@ function addProductItem() {
 
 
 function getName() {
-	var xhttp = new XMLHttpRequest();
-	xhttp.ondreadystatechange = function() {
-		if (xhttp.readyState == 4 && xhttp.status == 200) {
-			document.getElementById("ajaxSpan").innerHTML = xhttp.responseText;
-		}
-	};
-	xhttp.open("GET", "invoice_create.php?id=", true);
-	xhttp.send();
+	// var xhttp = new XMLHttpRequest();
+	// xhttp.ondreadystatechange = function() {
+	// 	if (xhttp.readyState == 4 && xhttp.status == 200) {
+	// 		document.getElementById("ajaxSpan").innerHTML = xhttp.responseText;
+	// 	}
+	// };
+	// xhttp.open("GET", "invoice_create.php?id=", true);
+	// xhttp.send();
 
  //    $.ajax({
  //    url: 'index.php?id=&name=',
