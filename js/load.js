@@ -116,7 +116,7 @@ function getName() {
 			document.getElementById("ajaxSpan").innerHTML = xhttp.responseText;
 		}
 	};
-	xhttp.open("GET", "index.php?id=", true);
+	xhttp.open("GET", "invoice_create.php?id=", true);
 	xhttp.send();
 
  //    $.ajax({
