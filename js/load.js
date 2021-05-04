@@ -96,7 +96,7 @@ var i = 0;
 function addProductItem() {
     var n = i;
     var newli = '<li id=\"' + n +
-    '\">Product ID: <input id="proId" name="invoice_productId[]" type="text" onblur="getName()"> <span id="ajaxSpan">hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
+    '\">Product ID: <input id="proId" name="invoice_productId[]" type="text" onblur="getName()"> <div id="ajaxDiv"></div> Quantity: <input name="invoice_product_quantity[]" type="text">'+
     '<a id=\"cancle' + n + '\" href="#">Delete</a></li>';
     $("ul.content-list").append(newli);
     i++;
@@ -110,15 +110,15 @@ function addProductItem() {
 
 
 function getName() {
+	alert("is run");
 	var xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
-			document.getElementById("ajaxSpan").innerHTML = xhttp.responseText;
+			document.getElementById("ajaxDiv").innerHTML = xhttp.responseText;
 		} else {
 			alert("yes");
 		}
 	};
-
 	xhttp.open("GET", "product_create.php?id=", true);
 	xhttp.send();
 
