@@ -50,7 +50,7 @@
 
 	$pg = 'SELECT name FROM public."Product" WHERE id = "$ajaxId"';
     $result = pg_query($connection,$pg);
-    if (pg_fetch_row($result)) {
+    if (pg_fetch_assoc($result)) {
     	echo $result;
     }
 
