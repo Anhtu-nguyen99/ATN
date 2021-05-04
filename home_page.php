@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header>
-		<div>
+		<div data-role="navbar">
 			<ul>
 				<li><a href="index.php" data-role="button">Admin page</a></li>
 				<li><a href="home_page.php" data-role="button">Home page</a></li>
