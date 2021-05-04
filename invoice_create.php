@@ -39,10 +39,10 @@
 	$invoice_query = 'INSERT INTO public."Invoice"("invoiceId","invoiceDate","desc","customerId","customerName","invoice_productId","invoice_product_quantity") VALUES (\''.$invoice_id.'\',\''.$date.'\',\''.$desc.'\',\''.$id.'\',\''.$name.'\',\''.$productId.'\',\''.$product_qty.'\')';
 
 	if (pg_query($connection,$invoice_query)) {
-			// echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
+		echo '<p> SUCCESS: Record is added succesfully. A new product is created</p>';
 	}
 	else {
-		// echo '<p> ERROR: Could not Execute query</p>';
+		echo '<p> ERROR: Could not Execute query</p>';
 	}
 
 	$ajaxId = $_GET["id"];
@@ -53,13 +53,6 @@
     if (pg_fetch_assoc($result)) {
     	echo $result;
     }
-
- //    while (pg_fetch_row($result)) {
- //        $a = pg_fetch_row($result);
- //        for ($b = 0; $b < count($a); $b++) {
- //            echo "<p>".$a[$b]."</p>";
- //        }
-	// }
 	?>
 </body>
 </html>
