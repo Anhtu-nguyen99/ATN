@@ -97,7 +97,7 @@ function addProductItem() {
 	alert("js run");
     var n = i;
     var newli = '<li id=\"' + n +
-    '\">Product ID: <input class="proId" name="invoice_productId[]" type="text" onblur="getName()"> <span>hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
+    '\">Product ID: <input class="proId" name="invoice_productId[]" type="text" onblur="getName()"> <span id="ajaxSpan">hello</span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
     '<a id=\"cancle' + n + '\" href="#">Delete</a></li>';
     $("ul.content-list").append(newli);
     i++;
@@ -106,21 +106,19 @@ function addProductItem() {
 		var item = document.getElementById(n);
 		item.remove();
 	});	
-    // $("ul.content-list").listview("refresh");
+    $("ul.content-list").listview("refresh");
 }
 
 
 function getName() {
-	alert("run js");
-
-	// var xhttp = new XMLHttpRequest();
-	// xhttp.ondreadystatechange = function() {
-	// 	if (xhttp.readyState == 4 && xhttp.status == 200) {
-	// 		document.getElementsByTagName("span").innerHTML = xhttp.responseText;
-	// 	}
-	// };
-	// xhttp.open("GET", "invoice_create.php?id=", true);
-	// xhttp.send();
+	var xhttp = new XMLHttpRequest();
+	xhttp.ondreadystatechange = function() {
+		if (xhttp.readyState == 4 && xhttp.status == 200) {
+			document.getElementById("ajaxspan").innerHTML = xhttp.responseText;
+		}
+	};
+	xhttp.open("GET", "invoice_create.php?id=", true);
+	xhttp.send();
 
  //    $.ajax({
  //    url: 'index.php?id=&name=',
