@@ -49,13 +49,6 @@
     </div>
 	</footer>
 	<?php
-	$id = $_REQUEST["id"];
-	$name = $_REQUEST["name"];
-	$cat = $_REQUEST["cat"];
-	$date = $_REQUEST["date"];
-	$desc = $_REQUEST["desc"];
-	$price = $_REQUEST["price"];
-
 	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
 	$database = "d7rjokn0julj07";
 	$user = "gqkbiudkurbksn";
@@ -75,7 +68,7 @@
 			}
 		}
 
-	class Product {
+class Product {
 	protected $id;
 	protected $name;
 	protected $price;
