@@ -119,6 +119,7 @@ function getName() {
 	var getId = document.getElementById("proId").value;
 	xhttp.open("GET", "invoice_create.php?id=" + getId, true);
 	xhttp.send();
+	alert("no");
 
  //    $.ajax({
  //    url: 'index.php?id=&name=',
