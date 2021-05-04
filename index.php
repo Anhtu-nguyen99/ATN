@@ -48,7 +48,7 @@
         <h4>Navigation</h4>
         <div data-role="navbar">
             <ul>
-                <li><a href="#atn_home" data-role="button">Home</a></li>
+                <li><a href="home_page.php" data-role="button">Home</a></li>
                 <li><a href="#invoice" onclick="bill()" data-role="button">Invoice</a></li>
             </ul>
         </div>
