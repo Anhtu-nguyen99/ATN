@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATN Company</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
 		<div>
-			<img src="img/head.jpg" alt="head car">;
+			<img src="img/head.jpg" alt="head car">
 		</div>
 	</header>
 	<main>
