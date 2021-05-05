@@ -109,12 +109,13 @@ function addProductItem() {
 }
 
 function getName(value) {
-	event.target.nextElementSibling.setAttribute("id", value);
-	// if (value == "") {
-	// 	document.getElementById(value).innerHTML = "";
-	// 	return;
-	// }
 	var xhttp;
+	event.target.nextElementSibling.setAttribute("id", value);
+	document.getElementById(value).innerHTML = "aaaa";
+	if (value == "") {
+		document.getElementById(value).innerHTML = "";
+		return;
+	}
 	xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
