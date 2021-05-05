@@ -121,7 +121,7 @@ function getName(value) {
 			document.getElementById(value).innerHTML = this.responseText;
 		}
 	};
-	xhttp.open("GET", "../product_get_name.php?id="+value, true);
+	xhttp.open("GET", "./product_get_name.php?id="+value, true);
 	xhttp.send();
 };
 
