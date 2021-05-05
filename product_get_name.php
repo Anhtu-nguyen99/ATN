@@ -24,6 +24,5 @@
     	echo "<p>".$result."</p>";
     }
 	?>
-	
 </body>
 </html>
