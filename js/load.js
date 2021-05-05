@@ -110,7 +110,6 @@ function addProductItem() {
 
 
 function getName() {
-	alert("is run");
 	var xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -119,7 +118,7 @@ function getName() {
 			alert("yes");
 		}
 	};
-	var getId = document.getElementById("proId").value;
+	var getId = document.getElementById("proId").value();
 	xhttp.open("GET", "product_get_name.php?id=" + getId, true);
 	xhttp.send();
 }
