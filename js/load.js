@@ -119,8 +119,8 @@ function getName() {
 			alert("yes");
 		}
 	};
-	var getId = document.getElementById("proId");
-	xhttp.open("GET", "product_create.php?id=" + getId, true);
+	var getId = document.getElementById("proId").value;
+	xhttp.open("GET", "product_get_name.php?id=" + getId, true);
 	xhttp.send();
 }
 

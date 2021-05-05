@@ -38,15 +38,6 @@
 		echo "SUCCESS: Connection to HERUKU postages has been established";
 	}
 
-	$ajaxId = $_GET["id"];
-
-    $pg = 'SELECT name FROM public."Product" WHERE id = \''.$ajaxId.'\'';
-    echo "<p>".$pg."</p>";
-    $result = pg_query($connection,$pg);
-    while (pg_fetch_row($result)) {
-    	echo "<p>".$result."</p>";
-    }
-
 	$product_query = 'INSERT INTO public."Product"( price, name, id, category, description) VALUES ( '.$price.', \''.$name.'\', \''.$id.'\', \''.$cat.'\', \''.$desc.'\')';
 
 
