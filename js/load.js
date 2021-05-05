@@ -110,10 +110,10 @@ function addProductItem() {
 
 function getName(value) {
 	event.target.nextElementSibling.setAttribute("id", value);
-	if (value == "") {
-		document.getElementById(value).innerHTML = "";
-		return;
-	}
+	// if (value == "") {
+	// 	document.getElementById(value).innerHTML = "";
+	// 	return;
+	// }
 	var xhttp;
 	xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
