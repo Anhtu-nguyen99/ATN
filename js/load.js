@@ -109,7 +109,7 @@ function addProductItem() {
 }
 
 function getName(value) {
-	event.target.nextElementSibling.setAttribute("id",value);
+	event.target.nextElementSibling.setAttribute("id", value);
 	if (value == "") {
 		document.getElementById(value).innerHTML = "";
 		return;
