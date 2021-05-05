@@ -111,7 +111,6 @@ function addProductItem() {
 function getName(value) {
 	var xhttp;
 	event.target.nextElementSibling.setAttribute("id", value);
-	document.getElementById(value).innerHTML = "aaaa";
 	if (value == "") {
 		document.getElementById(value).innerHTML = "";
 		return;
@@ -122,7 +121,7 @@ function getName(value) {
 			document.getElementById(value).innerHTML = this.responseText;
 		}
 	};
-	xhttp.open("GET", "product_get_name.php?id="+value, true);
+	xhttp.open("GET", "./product_get_name.php?id="+value, true);
 	xhttp.send();
 };
 
