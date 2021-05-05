@@ -1,4 +1,12 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<?php
 	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
 	$database = "d7rjokn0julj07";
 	$user = "gqkbiudkurbksn";
@@ -16,3 +24,5 @@
     	echo "<p>".$row[0]."</p>";
     }
 ?>
+</body>
+</html>
