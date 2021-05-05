@@ -108,23 +108,23 @@ function addProductItem() {
     $("ul.content-list").listview("refresh");
 }
 
-function getName(value) {
-	event.target.nextElementSibling.setAttribute("id",value);
-	if (value == "") {
-		document.getElementById(value).innerHTML = "";
-		return;
-	}
-	var xhttp;
-	xhttp = new XMLHttpRequest();
-	xhttp.ondreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			document.getElementById(value).innerHTML = this.responseText;
-		}
-	};
-	// var getId = document.getElementById("proId").value();
-	xhttp.open("GET", "product_get_name.php?id="+value., true);
-	xhttp.send();
-}
+// function getName(value) {
+// 	event.target.nextElementSibling.setAttribute("id",value);
+// 	if (value == "") {
+// 		document.getElementById(value).innerHTML = "";
+// 		return;
+// 	}
+// 	var xhttp;
+// 	xhttp = new XMLHttpRequest();
+// 	xhttp.ondreadystatechange = function() {
+// 		if (this.readyState == 4 && this.status == 200) {
+// 			document.getElementById(value).innerHTML = this.responseText;
+// 		}
+// 	};
+// 	// var getId = document.getElementById("proId").value();
+// 	xhttp.open("GET", "product_get_name.php?id="+value., true);
+// 	xhttp.send();
+// }
 
 
 
