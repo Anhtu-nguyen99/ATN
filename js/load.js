@@ -117,6 +117,7 @@ function getName() {
 		}
 	};
 	var getId = document.getElementById("proId").value();
+	alert(getId);
 	xhttp.open("GET", "product_get_name.php?id=" + getId, true);
 	xhttp.send();
 }
