@@ -114,8 +114,6 @@ function getName() {
 	xhttp.ondreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
 			document.getElementById("ajaxDiv").innerHTML = xhttp.responseText;
-		} else {
-			alert("yes");
 		}
 	};
 	var getId = document.getElementById("proId").value();
