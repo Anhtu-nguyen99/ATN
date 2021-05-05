@@ -110,6 +110,7 @@ function addProductItem() {
 
 
 function getName() {
+	alert("run");
 	var xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
