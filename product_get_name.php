@@ -15,7 +15,7 @@
 
 	// $connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
 
-	$ajaxId = $_REQUEST["id"];
+	$ajaxId = $_GET["id"];
 
 	echo "<p>".$ajaxId."</p>";
 
