@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <script src="js/load.js"></script>
+    <script src="load.js"></script>
     <title>PRODUCT-ATN</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.min.css">
