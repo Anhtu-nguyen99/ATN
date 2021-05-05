@@ -15,10 +15,9 @@
 
 	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
 
-	$ajaxId = $_GET["id"];
+	$ajaxId = $_REQUEST["id"];
 
     $pg = 'SELECT name FROM public."Product" WHERE id = \''.$ajaxId.'\'';
-    echo "<p>".$pg."</p>";
     $result = pg_query($connection,$pg);
     while ($row = pg_fetch_row($result)) {
     	echo "<p>".$row[0]."</p>";
