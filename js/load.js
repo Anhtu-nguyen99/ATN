@@ -117,7 +117,7 @@ function getName() {
 			document.getElementById("ajaxDiv").innerHTML = xhttp.responseText;
 		}
 	};
-	var getId = document.getElementById("proId").value();
+	var getId = document.getElementById("proId").value(this);
 	alert(getId);
 	xhttp.open("GET", "product_get_name.php?id=" + getId, true);
 	xhttp.send();
