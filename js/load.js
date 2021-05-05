@@ -123,7 +123,7 @@ function getName(value) {
 	};
 	xhttp.open("GET", "product_get_name.php?id="+value, true);
 	xhttp.send();
-}
+};
 
 
 
