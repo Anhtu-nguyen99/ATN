@@ -114,7 +114,8 @@ function getName(value) {
 		document.getElementById(value).innerHTML = "";
 		return;
 	}
-	var xhttp = new XMLHttpRequest();
+	var xhttp;
+	xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			document.getElementById(value).innerHTML = this.responseText;
