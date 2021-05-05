@@ -96,7 +96,7 @@ var i = 0;
 function addProductItem() {
     var n = i;
     var newli = '<li id=\"' + n +
-    '\">Product ID: <input name="invoice_productId[]" type="text" onfocusout="getName(this.value)"> <span></span> Quantity: <input name="invoice_product_quantity[]" type="text">'+
+    '\">Product ID: <input name="invoice_productId[]" type="text" onfocusout="getName(this.value)"> <label></label> Quantity: <input name="invoice_product_quantity[]" type="text">'+
     '<a id=\"cancle' + n + '\" href="#">Delete</a></li>';
     $("ul.content-list").append(newli);
     i++;
@@ -108,23 +108,22 @@ function addProductItem() {
     $("ul.content-list").listview("refresh");
 }
 
-// function getName(value) {
-// 	event.target.nextElementSibling.setAttribute("id",value);
-// 	if (value == "") {
-// 		document.getElementById(value).innerHTML = "";
-// 		return;
-// 	}
-// 	var xhttp;
-// 	xhttp = new XMLHttpRequest();
-// 	xhttp.ondreadystatechange = function() {
-// 		if (this.readyState == 4 && this.status == 200) {
-// 			document.getElementById(value).innerHTML = this.responseText;
-// 		}
-// 	};
-// 	// var getId = document.getElementById("proId").value();
-// 	xhttp.open("GET", "product_get_name.php?id="+value., true);
-// 	xhttp.send();
-// }
+function getName(value) {
+	event.target.nextElementSibling.setAttribute("id",value);
+	if (value == "") {
+		document.getElementById(value).innerHTML = "";
+		return;
+	}
+	var xhttp;
+	xhttp = new XMLHttpRequest();
+	xhttp.ondreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			document.getElementById(value).innerHTML = this.responseText;
+		}
+	};
+	xhttp.open("GET", "product_get_name.php?id="+value., true);
+	xhttp.send();
+}
 
 
 
