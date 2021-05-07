@@ -1,10 +1,54 @@
 div img {
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 
 main .image {
 	width: 100%;
-	height: 200px;
-	margin: auto;
+	height: 100%;
+}
+
+main h3 {
+	margin-left: 15px;
+}
+
+#search {
+	width: 100%;
+	font-size: 30px;
+	margin-top: 2px;
+	margin-left: 15px;
+}
+
+#search input{
+	width: 50%;
+	height: 50px;
+	font-size: 30px;
+}
+
+.head-btn {
+	float: left;
+	width: 50%;
+	background-color: #222222;
+	height: 50px;
+	text-align: center;
+	border: 3px solid #00FFFF;
+
+}
+
+.head a {
+	font-size: 30px;
+	color: white;
+}
+
+.foot {
+	background-color: #444444;
+	text-align: center;
+}
+
+.foot h2 {
+	color: #FFFFFF;
+}
+
+.foot p {
+	color: #FFFFFF;
 }
