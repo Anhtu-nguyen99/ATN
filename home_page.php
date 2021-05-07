@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 class getProducts {
 	function fetchAll() {
 		$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
@@ -10,12 +10,11 @@ class getProducts {
 		$products = [];
 		$pg = 'SELECT * FROM public."Product"';
 		$result = pg_query($connection,$pg);
-		if (count($resoult) > 0) 
+		if ($result) 
 		{
-			while ($row = pg_fetch_row($result))
+			while ($row = pg_fetch_assoc($result))
 			{
-				$product = new Product(
-					$row["id"], $row["name"], $row["price"], $row["image"], $row["category"], $row["description"]);
+				$product = new Product($row["id"], $row["name"], $row["price"], $row["image"], $row["category"], $row["description"]);
 				$products[] = $product;
 			}
 		}
@@ -55,10 +54,10 @@ class Product {
 		return $this->image;
 	}
 }
-?> -->
-<!-- <?php $getProducts = new getProducts();
+?>
+<?php $getProducts = new getProducts();
 $products = $getProducts->fetchAll();
-?>	 -->
+?>	
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,7 +86,7 @@ $products = $getProducts->fetchAll();
 				<div class="col-xs-6 col-sm-3">
 					<a href="#"><img class="image" src="img/<?=$product->getImage();?>" alt="<?=$product->getName();?>"></a>
 					<h5><a href="#"><?=$product->getName();?></a></h5>
-					<p><?=$product->getPrice();?></p>
+					<p><?=$product->getPrice()?></p>
 				</div>
 			<?php } ?>
 				<!-- <div class="col-xs-6 col-sm-3">
