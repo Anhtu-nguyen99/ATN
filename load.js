@@ -117,14 +117,13 @@ function getName(value) {
 	}
 	xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
-		if (this.readyState == 4) {
-			var ajax = document.getElementById(value);
-			ajax.innerHTML = "this.responseText";
+		if (this.readyState == 4 && this.status == 200) {
+			document.getElementById("add").innerHTML = this.responseText;
 		}
 	};
 	xhttp.open("GET", "product_get_name.php?id=" + value, true);
 	xhttp.send();
 };
 
-// && this.status == 200
+
 
