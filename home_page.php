@@ -71,6 +71,7 @@ function fetchAll() {
 	$password = "b0f9ad0d6bc76622ca310653f9129f2cab440d8e23e3061ef22d3b1934906c01";
 	$port = "5432";
 	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
+	$products = [];
 	$pg = 'SELECT * FROM public."Product"';
 	$result = pg_query($connection,$pg);
 	if (count($resoult) > 0) 
