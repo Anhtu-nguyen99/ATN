@@ -1,70 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ATN Company</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-</head>
-<body>
-	<header>
-		<div class="head">
-			<a href="index.php" data-role="button"><div class="head-btn">Admin page</div></a>
-			<a href="home_page.php" data-role="button"><div class="head-btn">Home page</div></a>
-			<img src="img/logo.jpg" alt="head car">
-		</div>
-	</header>
-	<main>
-		<div id="search">
-			Search: <input type="search">
-		</div>
-		<h3>ALL Cars</h3>
-		<div class="row">
-			<div class="col-xs-12 main">
-			<?php $getProducts = new getProducts();
-				  $products = $getProducts->fetchAll();
-			?>	
-			<?php foreach ($products as $product) {?>		
-				<div class="col-xs-6 col-sm-3">
-					<a href="#"><img class="image" src="img/<?=$product->getImage()?>" alt="<?=$product->getName()?>"></a>
-					<h5><a href="#"><?=$product->getName()?></a></h5>
-					<p><?=$product->getPrice()?></p>
-				</div>
-			<?php } ?>
-				<!-- <div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/320.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/x5.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/m4.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/z4.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div> -->
-			</div>
-		</div>
-	</main>
-	<footer>
-		<div class="foot">
-			<h2>Contact</h2>
-			<p>Hotline: 0772513431 / Nguyen Anh Tu</p>
-			<p>Gmail: Tunagcs190482@fpt.edu.vn</p>
-			<p>ATN Company 2021</p>
-		</div>
-	</footer>
-</body>
-</html>
 <?php
 class getProducts {
 	function fetchAll() {
@@ -123,3 +56,70 @@ class Product {
 	}
 }
 ?>
+<?php $getProducts = new getProducts();
+				  $products = $getProducts->fetchAll();
+?>	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ATN Company</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<div class="head">
+			<a href="index.php" data-role="button"><div class="head-btn">Admin page</div></a>
+			<a href="home_page.php" data-role="button"><div class="head-btn">Home page</div></a>
+			<img src="img/logo.jpg" alt="head car">
+		</div>
+	</header>
+	<main>
+		<div id="search">
+			Search: <input type="search">
+		</div>
+		<h3>ALL Cars</h3>
+		<div class="row">
+			<div class="col-xs-12 main">
+			<?php foreach ($products as $product) {?>		
+				<div class="col-xs-6 col-sm-3">
+					<a href="#"><img class="image" src="img/<?=$product->getImage()?>" alt="<?=$product->getName()?>"></a>
+					<h5><a href="#"><?=$product->getName()?></a></h5>
+					<p><?=$product->getPrice()?></p>
+				</div>
+			<?php } ?>
+				<!-- <div class="col-xs-6 col-sm-3">
+					<img class="image" src="img/320.jpg" alt="530 m sport">
+					<h5>bmw</h5>
+					<p>50000000</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img class="image" src="img/x5.jpg" alt="530 m sport">
+					<h5>bmw</h5>
+					<p>50000000</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img class="image" src="img/m4.jpg" alt="530 m sport">
+					<h5>bmw</h5>
+					<p>50000000</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img class="image" src="img/z4.jpg" alt="530 m sport">
+					<h5>bmw</h5>
+					<p>50000000</p>
+				</div> -->
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="foot">
+			<h2>Contact</h2>
+			<p>Hotline: 0772513431 / Nguyen Anh Tu</p>
+			<p>Gmail: Tunagcs190482@fpt.edu.vn</p>
+			<p>ATN Company 2021</p>
+		</div>
+	</footer>
+</body>
+</html>
