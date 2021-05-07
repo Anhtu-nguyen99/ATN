@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 class getProducts {
 	function fetchAll() {
 		$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
@@ -55,7 +55,7 @@ class Product {
 		return $this->image;
 	}
 }
-?>
+?> -->
 <!-- <?php $getProducts = new getProducts();
 $products = $getProducts->fetchAll();
 ?>	 -->
