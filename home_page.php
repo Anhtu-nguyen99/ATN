@@ -22,7 +22,9 @@
 		<h3>ALL Cars</h3>
 		<div class="row">
 			<div class="col-xs-12 main">
-			<?php $products->fetchAll();?>	
+			<?php $getProducts = new getProducts();
+				  $products = $getProducts->fetchAll();
+			?>	
 			<?php foreach ($products as $product) {?>		
 				<div class="col-xs-6 col-sm-3">
 					<a href="#"><img class="image" src="img/<?=$product->getImage()?>" alt="<?=$product->getName()?>"></a>
@@ -64,26 +66,28 @@
 </body>
 </html>
 <?php
-function fetchAll() {
-	$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
-	$database = "d7rjokn0julj07";
-	$user = "gqkbiudkurbksn";
-	$password = "b0f9ad0d6bc76622ca310653f9129f2cab440d8e23e3061ef22d3b1934906c01";
-	$port = "5432";
-	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
-	$products = [];
-	$pg = 'SELECT * FROM public."Product"';
-	$result = pg_query($connection,$pg);
-	if (count($resoult) > 0) 
-	{
-		while ($row = pg_fetch_assoc($result))
+class getProducts {
+	function fetchAll() {
+		$host = "ec2-54-167-152-185.compute-1.amazonaws.com";
+		$database = "d7rjokn0julj07";
+		$user = "gqkbiudkurbksn";
+		$password = "b0f9ad0d6bc76622ca310653f9129f2cab440d8e23e3061ef22d3b1934906c01";
+		$port = "5432";
+		$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
+		$products = [];
+		$pg = 'SELECT * FROM public."Product"';
+		$result = pg_query($connection,$pg);
+		if (count($resoult) > 0) 
 		{
-			$product = new Product(
-				$row["id"], $row["name"], $row["price"], $row["image"], $row["category"], $row["description"]);
-			$products[] = $product;
+			while ($row = pg_fetch_assoc($result))
+			{
+				$product = new Product(
+					$row["id"], $row["name"], $row["price"], $row["image"], $row["category"], $row["description"]);
+				$products[] = $product;
+			}
 		}
+		return $products;
 	}
-	return $products;
 }
 
 class Product {
