@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.min.css">
 
-    <script src="jqueryMobile/jquery-1.11.1.min.js"></script>
-    <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script src="jqueryMobile/jquery-1.11.1.min.js"></script> -->
+    <!-- <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script> -->
 </head>
 <body>
     <ul>

@@ -89,26 +89,6 @@ $products = $getProducts->fetchAll();
 					<p><?=$product->getPrice()?></p>
 				</div>
 			<?php } ?>
-				<!-- <div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/320.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/x5.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/m4.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img class="image" src="img/z4.jpg" alt="530 m sport">
-					<h5>bmw</h5>
-					<p>50000000</p>
-				</div> -->
 			</div>
 		</div>
 	</main>
