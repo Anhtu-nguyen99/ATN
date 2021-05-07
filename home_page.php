@@ -8,8 +8,8 @@
 	<!-- <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.min.css"> -->
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
-    <script src="jqueryMobile/jquery-1.11.1.min.js"></script>
-    <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script src="jqueryMobile/jquery-1.11.1.min.js"></script>
+    <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script> -->
 </head>
 <body>
 	<header>
