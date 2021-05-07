@@ -20,7 +20,7 @@
     $pg = 'SELECT name FROM public."Product" WHERE id = \''.$ajaxId.'\'';
     $result = pg_query($connection,$pg);
     while ($row = pg_fetch_row($result)) {
-    	echo "<p>".$row[0]."</p>";
+    	echo "<span>".$row[0]."</span>";
     }
 ?>
 </body>
