@@ -116,9 +116,9 @@ function getName(value) {
 		return;
 	}
 	xhttp = new XMLHttpRequest();
-	xhttp.ondreadystatechange = function() {
+	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			document.getElementById("add").innerHTML = this.responseText;
+			document.getElementById(value).innerHTML = this.responseText;
 		}
 	};
 	xhttp.open("GET", "product_get_name.php?id=" + value, true);
