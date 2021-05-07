@@ -83,11 +83,11 @@ $products = $getProducts->fetchAll();
 		<h3>ALL Cars</h3>
 		<div class="row">
 			<div class="col-xs-12 main">
-			<?php foreach ($products as $product) {?>		
+			<?php foreach ($products as $product) { ?>		
 				<div class="col-xs-6 col-sm-3">
-					<a href="#"><img class="image" src="img/<?=$product->getImage()?>" alt="<?=$product->getName()?>"></a>
-					<h5><a href="#"><?=$product->getName()?></a></h5>
-					<p><?=$product->getPrice()?></p>
+					<a href="#"><img class="image" src="img/<?=$product->getImage();?>" alt="<?=$product->getName();?>"></a>
+					<h5><a href="#"><?=$product->getName();?></a></h5>
+					<p><?=$product->getPrice();?></p>
 				</div>
 			<?php } ?>
 				<!-- <div class="col-xs-6 col-sm-3">
