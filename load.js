@@ -105,7 +105,7 @@ function addProductItem() {
 		var item = document.getElementById(n);
 		item.remove();
 	});	
-    $("ul.content-list").listview("refresh");
+    // $("ul.content-list").listview("refresh");
 }
 
 function getName(value) {
