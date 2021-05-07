@@ -118,7 +118,7 @@ function getName(value) {
 	xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			document.getElementById(value).innerHTML = this.responseText;
+			document.getElementById(value).innerHTML = "this.responseText";
 		}
 	};
 	xhttp.open("GET", "product_get_name.php?id="+value, true);
