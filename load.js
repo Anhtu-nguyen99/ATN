@@ -111,8 +111,6 @@ function addProductItem() {
 function getName(value) {
 	var xhttp;
 	event.target.nextElementSibling.setAttribute("id", value);
-	var span = document.getElementById(value);
-	span.innerHTML = "run";
 	if (value == "") {
 		document.getElementById(value).innerHTML = "";
 		return;
