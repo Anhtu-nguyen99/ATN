@@ -23,7 +23,7 @@
     // $result = pg_query($connection,$pg);
     // while ($row = pg_fetch_row($result)) {
     // 	echo "<p>".$row[0]."</p>";
-    }
+    //}
 ?>
 </body>
 </html>
