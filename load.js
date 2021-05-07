@@ -118,7 +118,8 @@ function getName(value) {
 	xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			document.getElementById(value).innerHTML = "this.responseText";
+			var ajax = document.getElementById(value);
+			ajax.innerHTML = "this.responseText";
 		}
 	};
 	xhttp.open("GET", "product_get_name.php?id=" + value, true);
