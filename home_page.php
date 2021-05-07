@@ -56,9 +56,9 @@ class Product {
 	}
 }
 ?>
-<?php $getProducts = new getProducts();
-				  $products = $getProducts->fetchAll();
-?>	
+<!-- <?php $getProducts = new getProducts();
+$products = $getProducts->fetchAll();
+?>	 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
