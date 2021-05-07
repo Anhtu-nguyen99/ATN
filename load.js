@@ -117,7 +117,7 @@ function getName(value) {
 	}
 	xhttp = new XMLHttpRequest();
 	xhttp.ondreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
+		if (this.readyState == 4) {
 			var ajax = document.getElementById(value);
 			ajax.innerHTML = "this.responseText";
 		}
@@ -126,5 +126,5 @@ function getName(value) {
 	xhttp.send();
 };
 
-
+// && this.status == 200
 
