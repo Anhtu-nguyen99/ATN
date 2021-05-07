@@ -79,7 +79,7 @@ class getProducts {
 		$result = pg_query($connection,$pg);
 		if (count($resoult) > 0) 
 		{
-			while ($row = pg_fetch_assoc($result))
+			while ($row = pg_fetch_row($result))
 			{
 				$product = new Product(
 					$row["id"], $row["name"], $row["price"], $row["image"], $row["category"], $row["description"]);
