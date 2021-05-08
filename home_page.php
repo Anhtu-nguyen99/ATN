@@ -78,7 +78,7 @@ $products = $getProducts->fetchAll();
 	</header>
 	<main>
 		<div id="search">
-			Search: <input id="find" type="search">
+			Search: <input id="find" onkeyup="search(this.value)" type="search">
 		</div>
 		<div id="board"></div>
 		<h3>ALL Cars</h3>
