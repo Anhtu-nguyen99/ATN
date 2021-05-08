@@ -66,6 +66,22 @@ $products = $getProducts->fetchAll();
 	<title>ATN Company</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script>
+		$(function(){
+			$("#search").keyup(function(event) {
+				var keysearch = $(this).val();
+				var xhttp;
+				xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("board").innerHTML = this.responseText;
+					}
+				};
+				xhttp.open("GET", "search_name.php?name=" + keysearch, true);
+				xhttp.send();
+			});
+		});
+	</script>	
 </head>
 <body>
 	<header>
@@ -79,6 +95,7 @@ $products = $getProducts->fetchAll();
 		<div id="search">
 			Search: <input type="search">
 		</div>
+		<div id="board"></div>
 		<h3>ALL Cars</h3>
 		<div class="row">
 			<div class="col-xs-12 main">
