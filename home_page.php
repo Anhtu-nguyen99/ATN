@@ -68,7 +68,7 @@ $products = $getProducts->fetchAll();
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<script>
 		$(function(){
-			$("#search").keyup(function(event) {
+			$("#find").keyup(function(event) {
 				var keysearch = $(this).val();
 				var xhttp;
 				xhttp = new XMLHttpRequest();
@@ -92,8 +92,8 @@ $products = $getProducts->fetchAll();
 		</div>
 	</header>
 	<main>
-		<div>
-			Search: <input id="search" type="search">
+		<div id="search">
+			Search: <input id="find" type="search">
 		</div>
 		<div id="board"></div>
 		<h3>ALL Cars</h3>
