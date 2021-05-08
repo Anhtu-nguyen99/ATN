@@ -16,8 +16,8 @@
 	$connection = pg_connect("host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require");
 	$ajaxName = $_GET["name"];
 
-    $pg = 'SELECT name FROM public."Product"';
-    $names = pg_query($connection,$pg);
+    $pgPost = 'SELECT name FROM public."Product"';
+    $names = pg_query($connection,$pgPost);
     $result = array();
     foreach ($names as $name) {
     	if (preg_match("/$ajaxName/", $name)) {
