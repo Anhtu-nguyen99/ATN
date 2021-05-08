@@ -74,7 +74,7 @@ $products = $getProducts->fetchAll();
 				xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
-						document.getElementById("board").innerHTML = this.responseText;
+						document.getElementById(board).innerHTML = this.responseText;
 					}
 				};
 				xhttp.open("GET", "search_name.php?name=" + keysearch, true);
@@ -92,8 +92,8 @@ $products = $getProducts->fetchAll();
 		</div>
 	</header>
 	<main>
-		<div id="search">
-			Search: <input type="search">
+		<div>
+			Search: <input id="search" type="search">
 		</div>
 		<div id="board"></div>
 		<h3>ALL Cars</h3>
