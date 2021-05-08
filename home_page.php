@@ -70,6 +70,7 @@ $products = $getProducts->fetchAll();
 		$(function(){
 			$("#find").keyup(function(event) {
 				var keysearch = $(this).val();
+				alert(keysearch);
 				var xhttp;
 				xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
