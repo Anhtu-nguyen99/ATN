@@ -67,20 +67,18 @@ $products = $getProducts->fetchAll();
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<script>
-		$(function(){
-			$("#find").keyup(function(event) {
-				var keysearch = $(this).val();
-				alert(keysearch);
-				var xhttp;
-				xhttp = new XMLHttpRequest();
-				xhttp.onreadystatechange = function() {
-					if (this.readyState == 4 && this.status == 200) {
-						document.getElementById(board).innerHTML = this.responseText;
-					}
-				};
-				xhttp.open("GET", "search_name.php?name=" + keysearch, true);
-				xhttp.send();
-			});
+		$("#find").keyup(function(event) {
+			var keysearch = $(this).val();
+			alert(keysearch);
+			var xhttp;
+			xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById(board).innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET", "search_name.php?name=" + keysearch, true);
+			xhttp.send();
 		});
 	</script>	
 </head>
