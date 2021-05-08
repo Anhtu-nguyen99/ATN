@@ -65,7 +65,9 @@ $products = $getProducts->fetchAll();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATN Company</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">	
+</head>
+<body>
 	<script>
 		$("#find").keyup(function(event) {
 			var keysearch = $(this).val();
@@ -80,9 +82,7 @@ $products = $getProducts->fetchAll();
 			xhttp.open("GET", "search_name.php?name=" + keysearch, true);
 			xhttp.send();
 		});
-	</script>	
-</head>
-<body>
+	</script>
 	<header>
 		<div class="head">
 			<a href="index.php" data-role="button"><div class="head-btn">Admin page</div></a>
