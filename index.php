@@ -11,11 +11,14 @@
     <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script> 
 </head>
 <body>
-    <ul>
+    <div><a href="#" onclick="customer()">Customer</a></div>
+    <div><a href="#" onclick="product()">Product</a></div>
+    <div><a href="#" onclick="bill()">Bill</a></div>
+    <!-- <ul>
         <li><a href="#" onclick="customer()">Customer</a></li>
         <li><a href="#" onclick="product()">Product</a></li>
         <li><a href="#" onclick="bill()">Bill</a></li>
-    </ul>
+    </ul> -->
 
     <h2 style="text-align: center;">Product</h2>
 
