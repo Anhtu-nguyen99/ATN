@@ -11,14 +11,9 @@
     <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script> 
 </head>
 <body>
-    <a href="#" onclick="customer()">Customer</a> &emsp;
+    &emsp;<a href="#" onclick="customer()">Customer</a> &emsp;
     <a href="#" onclick="product()">Product</a> &emsp;
     <a href="#" onclick="bill()">Bill</a>
-    <!-- <ul>
-        <li><a href="#" onclick="customer()">Customer</a></li>
-        <li><a href="#" onclick="product()">Product</a></li>
-        <li><a href="#" onclick="bill()">Bill</a></li>
-    </ul> -->
 
     <h2 style="text-align: center;">Product</h2>
 
